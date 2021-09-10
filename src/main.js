@@ -2,8 +2,13 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+import { Button, Dropdown } from 'buefy'
+
+import "buefy/dist/buefy.css";
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
+  Vue.use(Button)
+  Vue.use(Dropdown)
   Vue.component('Layout', DefaultLayout)
 }

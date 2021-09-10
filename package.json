@@ -8,6 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "buefy": "^0.9.10",
     "gridsome": "^0.7.0",
     "gridsome-plugin-i18n": "^1.6.0"
   },

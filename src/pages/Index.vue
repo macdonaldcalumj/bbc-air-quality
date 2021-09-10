@@ -18,11 +18,40 @@
   </Layout>
 </template>
 
+<page-query>
+query($locale:String) {
+  allAirQuality(filter: { lang: { eq: $locale }}) {
+    edges {
+      node {
+        id,
+        heroImage,
+        heroTitle,
+        byline,
+        date,
+        category,
+        categoryUrl,
+        textBlock1,
+        method,
+        tabsTitle,
+        tabsCities {
+          name,
+          aqi,
+          cig
+        },
+        textBlock2
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
 export default {
-  metaInfo: {
-    title: 'Hello, world!'
-  }
+  metaInfo()  {
+    return {
+      title: this.$page.allAirQuality.edges[0].node.heroTitle
+    }
+  },
 }
 </script>
 

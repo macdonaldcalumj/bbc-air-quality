@@ -20,6 +20,7 @@
     "babel-jest": "^27.1.1",
     "jest": "^27.1.1",
     "jest-serializer-vue": "^2.0.2",
-    "vue-jest": "^3.0.7"
+    "vue-jest": "^3.0.7",
+    "vue-template-compiler": "^2.6.14"
   }
 }

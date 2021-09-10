@@ -1,20 +1,17 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <img class="hero-image" :src="$page.allAirQuality.edges[0].node.heroImage">
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">
+          {{ $page.allAirQuality.edges[0].node.heroTitle }}
+        </p>
+        <p class="subtitle">
+          {{ $page.allAirQuality.edges[0].node.byline }}
+        </p>
+      </div>
+    </section>
+    <TextBlock v-bind:paragraphs="$page.allAirQuality.edges[0].node.textBlock1"/>
   </Layout>
 </template>
 
@@ -46,7 +43,11 @@ query($locale:String) {
 </page-query>
 
 <script>
+import TextBlock from '@/components/TextBlock'
 export default {
+  components: {
+    TextBlock
+  },
   metaInfo()  {
     return {
       title: this.$page.allAirQuality.edges[0].node.heroTitle
@@ -55,8 +56,8 @@ export default {
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
+<style scoped>
+.hero-image {
+  width: 100%;
 }
 </style>

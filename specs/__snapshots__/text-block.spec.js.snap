@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test mounting component 1`] = `
+<section class="section">
+  <div class="content"></div>
+</section>
+`;
+
+exports[`test props 1`] = `
+<section class="section">
+  <div class="content">
+    <p>
+      a
+    </p>
+  </div>
+</section>
+`;
+
+exports[`test props 2`] = `
+<section class="section">
+  <div class="content">
+    <p>
+      a
+    </p>
+    <p>
+      b
+    </p>
+  </div>
+</section>
+`;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="section">
+    <section class="section main-body">
       <div class="container">
         <slot/>
       </div>
@@ -29,3 +29,8 @@ export default ({
 })
 </script>
 
+<style scoped>
+.main-body {
+  padding-top: 0;
+}
+</style>

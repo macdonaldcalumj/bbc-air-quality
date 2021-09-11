@@ -16,6 +16,7 @@
       v-bind:title="$page.allAirQuality.edges[0].node.tabsTitle"
       v-bind:cities="$page.allAirQuality.edges[0].node.tabsCities"
     />
+    <TextBlock v-bind:paragraphs="$page.allAirQuality.edges[0].node.textBlock2"/>
   </Layout>
 </template>
 

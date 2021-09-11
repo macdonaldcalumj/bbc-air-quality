@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test mounting component 1`] = `
+<div class="columns">
+  <div class="column">
+    <section class="hero is-warning">
+      <div class="hero-body">
+        <p class="title">
+
+        </p>
+        <b-autocomplete placeholder="e.g. Anne" open-on-focus="true" data="" field="name"></b-autocomplete>
+      </div>
+    </section>
+  </div>
+  <div class="column">
+    <section class="hero is-success">
+      <div class="hero-body">
+        <p class="subtitle">
+
+        </p>
+        <!---->
+      </div>
+    </section>
+  </div>
+  <div class="column">
+    <section class="hero is-danger">
+      <div class="hero-body">
+        <p class="subtitle">
+          AQI
+        </p>
+        <!---->
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`test selecting city 1`] = `
+<div class="columns">
+  <div class="column">
+    <section class="hero is-warning">
+      <div class="hero-body">
+        <p class="title">
+          Select your city
+        </p>
+        <b-autocomplete placeholder="e.g. Anne" open-on-focus="true" data="[object Object],[object Object]" field="name"></b-autocomplete>
+      </div>
+    </section>
+  </div>
+  <div class="column">
+    <section class="hero is-success">
+      <div class="hero-body">
+        <p class="subtitle">
+
+        </p>
+        <!---->
+      </div>
+    </section>
+  </div>
+  <div class="column">
+    <section class="hero is-danger">
+      <div class="hero-body">
+        <p class="subtitle">
+          AQI
+        </p>
+        <!---->
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`test selecting city 2`] = `
+<div class="columns">
+  <div class="column">
+    <section class="hero is-warning">
+      <div class="hero-body">
+        <p class="title">
+          Select your city
+        </p>
+        <b-autocomplete placeholder="e.g. Anne" open-on-focus="true" data="[object Object],[object Object]" field="name"></b-autocomplete>
+      </div>
+    </section>
+  </div>
+  <div class="column">
+    <section class="hero is-success">
+      <div class="hero-body">
+        <p class="subtitle">
+
+        </p>
+        <p class="title">
+          4
+        </p>
+      </div>
+    </section>
+  </div>
+  <div class="column">
+    <section class="hero is-danger">
+      <div class="hero-body">
+        <p class="subtitle">
+          AQI
+        </p>
+        <p class="title">
+          91 PM2.5
+        </p>
+      </div>
+    </section>
+  </div>
+</div>
+`;

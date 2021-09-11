@@ -12,6 +12,10 @@
       </div>
     </section>
     <TextBlock v-bind:paragraphs="$page.allAirQuality.edges[0].node.textBlock1"/>
+    <CityInfo
+      v-bind:title="$page.allAirQuality.edges[0].node.tabsTitle"
+      v-bind:cities="$page.allAirQuality.edges[0].node.tabsCities"
+    />
   </Layout>
 </template>
 
@@ -43,9 +47,12 @@ query($locale:String) {
 </page-query>
 
 <script>
+import CityInfo from '@/components/CityInfo'
 import TextBlock from '@/components/TextBlock'
+
 export default {
   components: {
+    CityInfo,
     TextBlock
   },
   metaInfo()  {

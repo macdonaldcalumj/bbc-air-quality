@@ -42,6 +42,20 @@ function dataLoader(path, id, lang) {
     })
   }
 
+  // Sort cities alphabetically
+  processedData.tabsCities.sort((a, b) => {
+    const fa = a.name.toLowerCase()
+    const fb = b.name.toLowerCase()
+
+    if (fa < fb) {
+      return -1
+    }
+    if (fa > fb) {
+      return 1
+    }
+    return 0
+  })
+
   processedData.textBlock2 = [
     data["p_6_value"],
     data["p_7_value"],

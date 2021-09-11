@@ -7,7 +7,7 @@
             {{ title }}
           </p>
           <b-autocomplete
-            placeholder="e.g. Anne"
+            placeholder="e.g. Delhi"
             v-model="cityName"
             :open-on-focus="true"
             :data="filteredDataObj"

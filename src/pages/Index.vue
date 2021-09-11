@@ -11,6 +11,7 @@
         </p>
       </div>
     </section>
+    {{ $t("message.category") }}: <a :href="$page.allAirQuality.edges[0].node.categoryUrl" target="blank">{{ $page.allAirQuality.edges[0].node.category }}</a>
     <TextBlock v-bind:paragraphs="$page.allAirQuality.edges[0].node.textBlock1"/>
     <CityInfo
       v-bind:title="$page.allAirQuality.edges[0].node.tabsTitle"

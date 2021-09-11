@@ -1,6 +1,7 @@
 {
   "message": {
     "changeLocale": "भाषा सेट करें",
-    "totalCigarettes": "कुल सिगरेट"
+    "totalCigarettes": "कुल सिगरेट",
+    "category": "श्रेणी"
   }
 }

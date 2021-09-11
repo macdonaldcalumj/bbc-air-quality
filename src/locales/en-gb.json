@@ -1,6 +1,7 @@
 {
   "message": {
     "changeLocale": "Choose Language",
-    "totalCigarettes": "Total Cigarettes"
+    "totalCigarettes": "Total Cigarettes",
+    "category": "Category"
   }
 }

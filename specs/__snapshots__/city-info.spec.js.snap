@@ -8,7 +8,7 @@ exports[`test mounting component 1`] = `
         <p class="title">
 
         </p>
-        <b-autocomplete placeholder="e.g. Anne" open-on-focus="true" data="" field="name"></b-autocomplete>
+        <b-autocomplete open-on-focus="true" data="" field="name"></b-autocomplete>
       </div>
     </section>
   </div>
@@ -43,7 +43,7 @@ exports[`test selecting city 1`] = `
         <p class="title">
           Select your city
         </p>
-        <b-autocomplete placeholder="e.g. Anne" open-on-focus="true" data="[object Object],[object Object]" field="name"></b-autocomplete>
+        <b-autocomplete open-on-focus="true" data="[object Object],[object Object]" field="name"></b-autocomplete>
       </div>
     </section>
   </div>
@@ -78,7 +78,7 @@ exports[`test selecting city 2`] = `
         <p class="title">
           Select your city
         </p>
-        <b-autocomplete placeholder="e.g. Anne" open-on-focus="true" data="[object Object],[object Object]" field="name"></b-autocomplete>
+        <b-autocomplete open-on-focus="true" data="[object Object],[object Object]" field="name"></b-autocomplete>
       </div>
     </section>
   </div>

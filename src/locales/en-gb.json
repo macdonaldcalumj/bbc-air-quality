@@ -2,6 +2,7 @@
   "message": {
     "changeLocale": "Choose Language",
     "totalCigarettes": "Total Cigarettes",
-    "category": "Category"
+    "category": "Category",
+    "cityPlaceholder": "e.g. Delhi"
   }
 }

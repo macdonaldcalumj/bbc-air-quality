@@ -2,6 +2,7 @@
   "message": {
     "changeLocale": "भाषा सेट करें",
     "totalCigarettes": "कुल सिगरेट",
-    "category": "श्रेणी"
+    "category": "श्रेणी",
+    "cityPlaceholder": "e.g. दिल्ली"
   }
 }
